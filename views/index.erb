@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guest Book</title>
+  </head>
+<body>
+  <div>
+  <h1>Guest book</h1>
+  </div>
+  <br />
+  <b>Message board</b>:
+  <hr>
+  <div>
+  <%= @message_board.to_str %>
+  </div>
+  <br / >
+  <br / >
+ 
+  <form action="/" method="post" /> 
+  <b>Author</b>:<input type="text" name="author" maxlength="20" placeholder="Introduce yourself" required >
+  <br />
+  <br />
+  <textarea type="text" placeholder="Place your message here" name="content" cols="40" rows="4" maxlength="1000" required></textarea>
+  <br />
+  <br />
+  <input type="submit" >
+  </form>
+  </div>
+</body>
+</html>
